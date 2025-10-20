@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function scitani(cus1, cus2) {
+        vysledek1 = cus1 + cus2;
+        return vysledek1;
+    }
+    function odcitani(cus1, cus2) {
+        vysledek2 = cus1 - cus2;
+        return vysledek2;
+    }
+    function nasobeni(cus1, cus2) {
+        vysledek3 = cus1 * cus2;
+        return vysledek3;
+    }
+    function deleni(cus1, cus2) {
+        vysledek4 = cus1 / cus2;
+        return vysledek4;
+    }
+    let cislo1 = Number(prompt("zadej cislo"));
+    let cislo2 = Number(prompt("zadej cisl2"));
+
+    console.log("scitani:" + scitani(cislo1, cislo2))
+    console.log("odcitani:" + odcitani(cislo1, cislo2))
+    console.log("nasobeni:" + nasobeni(cislo1, cislo2))
+    console.log("deleni:" + deleni(cislo1, cislo2))
+
+    console.log(cislo1 > cislo2 ? scitani(cislo1, cislo2): odcitat(cislo1, cislo2));
+
+
+</script>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //funkce
+
+    function ahoj(){
+        let hodnota = Number(prompt("zadej cislo: "));
+        console.log((hodnota%2)==1);
+    }
+
+    ahoj();
+
+    function secti(a, b){
+        let soucet = a + b; // tato promenna nejde videt mimo funkci
+        return soucet; //vrati hodnotu z funkce a ukonci funkci
+    }
+
+    secti(7,3);
+    let prvni = 10;
+    let druha = 3;
+    console.log(secti(prvni, druha) + 20);
+
+    // kompletni struktura funkce
+    /*
+    function funkce(par1, par2, ...){
+    kod funkce;
+    return vysledek;
+    }
+
+    funkce(par1, par2, ...); - privolani funkce
+    */
+
+    function pozdrav(jmeno){
+        console.log("vitejte " + jmeno);
+    }
+
+    pozdrav(prompt("zadej jmeno: "))
+</script>
+</html>

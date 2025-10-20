@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // const - prebije funkci
+    const nemenna = 3;
+    function datum(){
+        let vypocet = nemenna + 8;
+        return vypocet;
+    }
+
+    datum();
+
+    // anonymni funkce - nemaji nazev, ale muze byt predana jako argument do dalsi funkce
+    let soucet = function(a, b){
+        return a + b;
+    }
+
+    console.log(soucet(7, 3));
+    // vnorene funkce
+    function vnorena(a, b){
+        let soucet = function(a, b){
+            return a + b;
+        }
+        return soucet(a, b);
+    }
+    vnorena(11, 5);
+    // callback funkce - jsou predany jako argument do dalsich funkci a mohou byt volany pozdeji
+    function rozsah(){
+        let lokalni = "tohle je viditelny jen uvnitr funkce";
+        return lokalni;
+    }
+
+    let lol = rozsah();
+    console.log(lol);
+
+
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let cislo1 = Number(prompt("zadej cislo 1"));
+    let cislo2 = Number(prompt("zadej cislo 2"));
+
+    function soucet(a, b) {
+        return a + b;
+    }
+
+    function soucin(a, b) {
+        return a * b;
+    }
+
+    console.log(soucin(cislo1, cislo2) - soucet(cislo1, cislo2));
+
+    let vysledek = soucin(cislo1, cislo2) / soucet(cislo1, cislo2);
+    console.log(vysledek); //nevim jak se dela callback funkce cau nazdar bazar
+</script>
+
+</html>
