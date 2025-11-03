@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="zmenabarvy()">ukazka eventu</button>
+    
+    
+    <script>
+        // komunikace mezi html a js, zkracuje cestu, pridava nove prvky
+
+        document.body.style.backgroundColor = "pink";
+
+        function zmenabarvy(){
+            document.body.style.backgroundColor = "lightgreen";
+            document.body.innerHTML = "<h1>ukazka DOM</h1><button onclick='vraceni()'>ukazka eventu</button>"
+        }
+
+        function vraceni() {
+            document.body.style.backgroundColor = "pink";
+        }
+    </script>
+</body>
+</html>
