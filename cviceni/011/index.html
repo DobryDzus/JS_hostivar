@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="nadpis">Rošambo</h1>
+
+    <p id="odstavec1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque possimus quia harum vero earum unde? Recusandae nihil odio blanditiis animi? Eligendi enim dolores dolorum! Porro blanditiis accusamus dolorum recusandae sunt!</p>
+
+    <p id="odstavec2">pes divoký</p>
+
+    <p id="odstavec3">kočka domácí</p>
+
+    <script>
+        let odstavec1 = document.getElementById("odstavec1");
+        let odstavec2 = document.getElementById("odstavec2");
+        let odstavec3 = document.getElementById("odstavec3");
+        let nadpis = document.getElementById("nadpis");
+
+        odstavec1.style.backgroundColor = "lightblue";
+        odstavec2.style.backgroundColor = "lightgreen";
+        odstavec3.style.backgroundColor = "lightcoral";
+
+        let docasna = odstavec1.innerText;
+        odstavec1.innerText = odstavec3.innerText;
+        odstavec3.innerText = docasna;
+
+        let docasna2 = odstavec2.innerText;
+        odstavec2.innerText = nadpis.innerText;
+        nadpis.innerText = docasna2;
+
+
+
+        //1-3, 2-nadpis
+    </script>
+</body>
+</html>

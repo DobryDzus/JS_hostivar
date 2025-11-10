@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>vysledna hodnota value je: </h1>
+    <p id="cislo">11</p>
+    <img id="obrazek" src="ahoj.jpg" alt="obrazek stromu">
+
+    <input type="number" name="" id="vstup" value="15">
+
+    <script>
+        // 1 getAttribute - ziska hodnotu atributu
+        let ziskanahodnota = document.getElementById("obrazek").getAttribute("src"); // ziska hodnotu atributu src; getAttribute(atribut ktery chci ziskat)
+        console.log(ziskanahodnota);
+
+        // 2 setAttribute - nastavi hodnotu atributu
+        let obrazek1 = document.getElementById("obrazek"); // v promenne obrazek1 je ulozen prvek s id obrazek se vsemi jeho vlastnostmi
+        obrazek1.setAttribute("src", "ahoj3.jpg"); // zmeni atribut src na novou hodnotu - url obrazku; setAttribute(atribut, hodnota atributu)
+
+        // 3 removeAttribute - odstrani atribut z prvku
+        obrazek1.removeAttribute("alt"); //odstrani atribut alt removeAttribute(atribut ktery chci odstranit)
+
+        // 4 value - ziska ciselnou hodnotu z html prvku - dynamicky prvek
+        let cislo = document.getElementById("vstup").value;
+        console.log(cislo);
+
+        document.getElementById("cislo").innerHTML = cislo; // zmeni obsah elementu s id cislo na hodnotu promenne cislo    
+    </script>
+</body>
+</html>
