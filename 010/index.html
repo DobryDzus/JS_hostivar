@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        width: 10%;
+    }
+</style>
+<body>
+    <!-- dom eventy - slouzi k interakci uzivatele se strankou-->
+    <!-- lze spoustet pres html nebo pres addEventListener -->
+    <!-- ucelem je temer vzdy spustit nejakou funkci -->
+
+    <button onclick="spustit()">stiskni me</button>
+
+
+    <h1 onclick="spustit()">cau</h1>
+
+    <img id="obrazek" src="ahoj3.jpg" alt="stromecek" onmouseover="zmenit()" onmouseout="resetovatObrazek()">
+
+    <script>
+        function spustit(){
+            document.body.style.backgroundColor = "lightblue";
+        }
+
+        function zmenit(){
+            document.getElementById("obrazek").src = "ahoj.jpg";
+        }
+
+        function resetovatObrazek() {
+            document.getElementById("obrazek").src = "ahoj3.jpg";
+        }
+
+        // pouziti addEventListener
+        // aby spravne fungoval, musi byt napojeny na nejaky html prvek
+        const obrazek1 = document.getElementById("obrazek");
+
+        obrazek1.addEventListener("click", function() {
+            alert("nazdar bazar");
+        });
+
+        
+    </script>
+</body>
+</html>
