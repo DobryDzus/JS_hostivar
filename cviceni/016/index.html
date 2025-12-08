@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>nakup</h1>
+    <h5>pocet nakoupenych polozek je <span id="pocet">0</span></h5>
+    <div>
+        <button onclick="pricist(1)">+1</button>
+        <button onclick="pricist(3)">+3</button>
+        <button onclick="pricist(5)">+5</button>
+    </div>
+    <div>
+        <button onclick="odecist(1)">-1</button>
+        <button onclick="odecist(3)">-3</button>
+        <button onclick="odecist(5)">-5</button>
+    </div>
+    <script>
+        function pricist(pocet){
+            let kolik = document.getElementById("pocet");
+            let aktualni = Number(kolik.innerText);
+            kolik.innerText = aktualni + pocet;
+        }
+
+        function odecist(pocet){
+            let kolik = document.getElementById("pocet");
+            let aktualni = Number(kolik.innerText);
+            kolik.innerText = aktualni - pocet;
+        }
+    </script>
+</body>
+</html>

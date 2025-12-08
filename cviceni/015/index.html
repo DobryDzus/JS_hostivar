@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: space-between;
+    }
+    div{
+        width: 33vw;
+        height: 33vh;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #prvni{
+        background-color: aqua;
+    }
+    #druhy{
+        background-color: coral;
+    }
+    #treti{
+        background-color: lightgreen;
+    }
+</style>
+<body>
+    <div id="prvni" onmouseover="zmenBarvu('prvni')" onmouseout="vratBarvu1()" onclick="spustitAlert()">cs</div>
+    <div id="druhy" onmouseover="zmenBarvu('druhy')" onmouseout="vratBarvu2()" onclick="spustitAlert()">cs</div>
+    <div id="treti" onmouseover="zmenBarvu('treti')" onmouseout="vratBarvu3()" onclick="spustitAlert()">cs</div>
+
+    <script>
+        function zmenBarvu(id) {
+            document.getElementById(id).style.backgroundColor = "gray";
+        }
+        function vratBarvu1() {
+            document.getElementById("prvni").style.backgroundColor = "aqua";
+        }
+        function vratBarvu2() {
+            document.getElementById("druhy").style.backgroundColor = "coral";
+        }
+        function vratBarvu3() {
+            document.getElementById("treti").style.backgroundColor = "lightgreen";
+        }
+        function spustitAlert() {
+            alert("cau");
+        }
+    </script>
+</body>
+</html>

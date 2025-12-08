@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" name="polozka" id="polozka">
+    <button id="pridat">Pridat polozku</button>
+
+
+    <ul id="seznam">
+
+    </ul>
+    <script>
+        let pridat = document.getElementById("pridat");
+
+        pridat.addEventListener("click", function(){
+            let text = document.getElementById("polozka").value;
+            document.getElementById("seznam").innerHTML += "<li>" + text + "</li>";
+        });
+    </script>
+</body>
+</html>
